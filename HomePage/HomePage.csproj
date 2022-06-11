@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD1304CA-88D7-45F2-971D-E2C1F5F826C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HomePage</RootNamespace>
+    <AssemblyName>HomePage</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAddPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminAddPanel.Designer.cs">
+      <DependentUpon>AdminAddPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDecoUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminDecoUpdate.Designer.cs">
+      <DependentUpon>AdminDecoUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminOwnerUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminOwnerUpdate.Designer.cs">
+      <DependentUpon>AdminOwnerUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminProfile.Designer.cs">
+      <DependentUpon>AdminProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Contact.Designer.cs">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConversationPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConversationPanel.Designer.cs">
+      <DependentUpon>ConversationPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DecoAddPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DecoAddPanel.Designer.cs">
+      <DependentUpon>DecoAddPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DecoProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DecoProfile.Designer.cs">
+      <DependentUpon>DecoProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DecoProfileUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DecoProfileUpdate.Designer.cs">
+      <DependentUpon>DecoProfileUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DecoratorSignUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DecoratorSignUp.Designer.cs">
+      <DependentUpon>DecoratorSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DecoRefundPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DecoRefundPanel.Designer.cs">
+      <DependentUpon>DecoRefundPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Feedback.Designer.cs">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForDecoWantedPost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ForDecoWantedPost.Designer.cs">
+      <DependentUpon>ForDecoWantedPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeDefault.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeDefault.Designer.cs">
+      <DependentUpon>HomeDefault.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainConvoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainConvoPanel.Designer.cs">
+      <DependentUpon>MainConvoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModernAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModernAdd.Designer.cs">
+      <DependentUpon>ModernAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NaturalAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NaturalAdd.Designer.cs">
+      <DependentUpon>NaturalAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OAcceptReject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OAcceptReject.Designer.cs">
+      <DependentUpon>OAcceptReject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerInterestedWantedPost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OwnerInterestedWantedPost.Designer.cs">
+      <DependentUpon>OwnerInterestedWantedPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OwnerProfile.Designer.cs">
+      <DependentUpon>OwnerProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerRequestFund.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OwnerRequestFund.Designer.cs">
+      <DependentUpon>OwnerRequestFund.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerRequestFundStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OwnerRequestFundStatus.Designer.cs">
+      <DependentUpon>OwnerRequestFundStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerSignUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OwnerSignUp.Designer.cs">
+      <DependentUpon>OwnerSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OwnerUpdate.Designer.cs">
+      <DependentUpon>OwnerUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerWantedPost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OwnerWantedPost.Designer.cs">
+      <DependentUpon>OwnerWantedPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchPanel.Designer.cs">
+      <DependentUpon>SearchPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowFeedback.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShowFeedback.Designer.cs">
+      <DependentUpon>ShowFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpCatagory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SignUpCatagory.Designer.cs">
+      <DependentUpon>SignUpCatagory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TypeSelection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TypeSelection.Designer.cs">
+      <DependentUpon>TypeSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewOrders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewOrders.Designer.cs">
+      <DependentUpon>ViewOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VintageAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VintageAdd.Designer.cs">
+      <DependentUpon>VintageAdd.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAddPanel.resx">
+      <DependentUpon>AdminAddPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDecoUpdate.resx">
+      <DependentUpon>AdminDecoUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminOwnerUpdate.resx">
+      <DependentUpon>AdminOwnerUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminProfile.resx">
+      <DependentUpon>AdminProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact.resx">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConversationPanel.resx">
+      <DependentUpon>ConversationPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DecoAddPanel.resx">
+      <DependentUpon>DecoAddPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DecoProfile.resx">
+      <DependentUpon>DecoProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DecoProfileUpdate.resx">
+      <DependentUpon>DecoProfileUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DecoratorSignUp.resx">
+      <DependentUpon>DecoratorSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DecoRefundPanel.resx">
+      <DependentUpon>DecoRefundPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback.resx">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForDecoWantedPost.resx">
+      <DependentUpon>ForDecoWantedPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeDefault.resx">
+      <DependentUpon>HomeDefault.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainConvoPanel.resx">
+      <DependentUpon>MainConvoPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModernAdd.resx">
+      <DependentUpon>ModernAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NaturalAdd.resx">
+      <DependentUpon>NaturalAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OAcceptReject.resx">
+      <DependentUpon>OAcceptReject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerInterestedWantedPost.resx">
+      <DependentUpon>OwnerInterestedWantedPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerProfile.resx">
+      <DependentUpon>OwnerProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerRequestFund.resx">
+      <DependentUpon>OwnerRequestFund.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerRequestFundStatus.resx">
+      <DependentUpon>OwnerRequestFundStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerSignUp.resx">
+      <DependentUpon>OwnerSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerUpdate.resx">
+      <DependentUpon>OwnerUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerWantedPost.resx">
+      <DependentUpon>OwnerWantedPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchPanel.resx">
+      <DependentUpon>SearchPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowFeedback.resx">
+      <DependentUpon>ShowFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpCatagory.resx">
+      <DependentUpon>SignUpCatagory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TypeSelection.resx">
+      <DependentUpon>TypeSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewOrders.resx">
+      <DependentUpon>ViewOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VintageAdd.resx">
+      <DependentUpon>VintageAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48019412-invalid-red-stamp-text-on-white.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1138179183-612x612.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
